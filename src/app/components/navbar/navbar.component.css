@@ -1,0 +1,12 @@
+ul {
+    display: flex; /* Makes the list items appear in a row */
+    list-style-type: none; /* Removes bullet points */
+    padding: 5rem 0 0 10rem; 
+
+}
+
+li {
+    color: white;
+    margin-right: 20px; /* Adds space between items */
+    font-size: 1.5rem;
+}

@@ -1,0 +1,47 @@
+.container{
+    color: white;
+    // background-color: white !important;
+}
+.container {
+    padding: 20px;
+}
+
+.follow-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.follow-button {
+    margin-bottom: 20px;
+}
+
+.follow-btn {
+    font-size: 1rem;
+    color: #fff;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    width: 6rem;
+    border: 1px solid white;
+}
+
+.icon-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    margin: 10px;
+    object-fit: contain;
+}
