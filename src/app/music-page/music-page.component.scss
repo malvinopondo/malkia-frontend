@@ -1,6 +1,9 @@
 .container-fluid.music-page {
     background-color: #121212; /* Dark theme background */
     padding: 2rem 1rem; /* Adds spacing around the page */
+    .navigation{
+        padding: 4rem 0;
+    }
 }
 
 .music-card {

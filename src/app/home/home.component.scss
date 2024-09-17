@@ -5,6 +5,9 @@
         height: 50rem;
         width: 100%;
         position: relative; /* Ensure relative positioning for child elements */
+        .navbar{
+            z-index: 2;
+        }
 
         .image {
             position: absolute; /* Position absolutely within .main-section */

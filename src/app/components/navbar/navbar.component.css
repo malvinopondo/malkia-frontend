@@ -1,12 +1,13 @@
 ul {
-    display: flex; /* Makes the list items appear in a row */
-    list-style-type: none; /* Removes bullet points */
-    padding: 5rem 0 0 10rem; 
-
+    display: flex;
+    list-style-type: none;
+    padding: 5rem 0 0 10rem;
+    
 }
 
 li {
     color: white;
-    margin-right: 20px; /* Adds space between items */
+    margin-right: 20px;
     font-size: 1.5rem;
+    cursor: pointer; /* Ensure this is applied */
 }

@@ -1,6 +1,13 @@
-<div class="container">
+
+<div class="container-fluid music-page">
+    <div class="navigation">
+        <app-navbar></app-navbar>
+    </div>
+    
+    
     <div class="row">
-        <!-- Each column will take 3 columns on medium screens and 12 columns (full width) on small screens -->
+        <!-- Loop through each music card (for simplicity, I'll show just 4 here) -->
+        <!-- Repeat the following block to display 20 tracks -->
         <div class="col-md-3 col-sm-12 mb-4">
             <div class="card music-card border-0 shadow-lg text-center">
                 <img class="card-img-top" src="https://i.pinimg.com/474x/aa/1f/ee/aa1fee1544bbe0c4b652a32fe7ee9b5b.jpg" alt="Track Image">
@@ -15,6 +22,7 @@
             </div>
         </div>
 
+        <!-- Repeat the card structure for the next tracks -->
         <div class="col-md-3 col-sm-12 mb-4">
             <div class="card music-card border-0 shadow-lg text-center">
                 <img class="card-img-top" src="https://i.pinimg.com/236x/e6/11/cc/e611cc3cf5b2b9cdc4ca0d84372f08c9.jpg" alt="Track Image">
@@ -28,7 +36,21 @@
                 </div>
             </div>
         </div>
+        <div class="col-md-3 col-sm-12 mb-4">
+            <div class="card music-card border-0 shadow-lg text-center">
+                <img class="card-img-top" src="https://i.pinimg.com/474x/aa/1f/ee/aa1fee1544bbe0c4b652a32fe7ee9b5b.jpg" alt="Track Image">
+                <div class="card-body">
+                    <h5 class="card-title text-light">Tear Drops</h5>
+                    <audio controls>
+                        <source src="track-url.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <a href="track-url.mp3" download class="btn btn-outline-light mt-2">Download</a>
+                </div>
+            </div>
+        </div>
 
+        <!-- Repeat the card structure for the next tracks -->
         <div class="col-md-3 col-sm-12 mb-4">
             <div class="card music-card border-0 shadow-lg text-center">
                 <img class="card-img-top" src="https://i.pinimg.com/236x/e6/11/cc/e611cc3cf5b2b9cdc4ca0d84372f08c9.jpg" alt="Track Image">
@@ -42,7 +64,23 @@
                 </div>
             </div>
         </div>
+        <!-- Add more track cards here to reach 20 -->
 
+        <div class="col-md-3 col-sm-12 mb-4">
+            <div class="card music-card border-0 shadow-lg text-center">
+                <img class="card-img-top" src="https://i.pinimg.com/474x/aa/1f/ee/aa1fee1544bbe0c4b652a32fe7ee9b5b.jpg" alt="Track Image">
+                <div class="card-body">
+                    <h5 class="card-title text-light">Tear Drops</h5>
+                    <audio controls>
+                        <source src="track-url.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <a href="track-url.mp3" download class="btn btn-outline-light mt-2">Download</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat the card structure for the next tracks -->
         <div class="col-md-3 col-sm-12 mb-4">
             <div class="card music-card border-0 shadow-lg text-center">
                 <img class="card-img-top" src="https://i.pinimg.com/236x/e6/11/cc/e611cc3cf5b2b9cdc4ca0d84372f08c9.jpg" alt="Track Image">
@@ -56,7 +94,5 @@
                 </div>
             </div>
         </div>
-
-        
     </div>
 </div>
