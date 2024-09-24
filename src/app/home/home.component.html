@@ -1,33 +1,43 @@
 <div class="container-fluid">
+    <!-- Main Section -->
     <div class="main-section">
         <div class="navbar">
             <app-navbar></app-navbar>
         </div>
         
         <div class="image">
-            <img src="./assets/main_bg.png" alt="Background Image">
+            <img src="./assets/main_bg.png" alt="Background Image" />
+        </div>
+        
+        <div class="overlay">
+            <div class="text-center text-white mt-5 pt-5">
+                <h1 class="display-4 font-weight-bold">Welcome to DJ MALKIA</h1>
+                <p class="lead">Experience the best music and videos from DJ MALKIA.</p>
+            </div>
         </div>
     </div>
 
     <div class="line"></div>
 
-    <div class="music-section">
+    <!-- Music Section -->
+    <div class="music-section text-center">
         <p class="sub-header">MUSIC</p>
         <app-music></app-music>
         <p class="view-more">VIEW MORE</p>
     </div>
 
     <div class="line"></div>
-    
-    <div class="video-section">
+
+    <!-- Video Section -->
+    <div class="video-section text-center">
         <p class="sub-header">VIDEO</p>
         <app-videos></app-videos>
-
         <p class="view-more">VIEW MORE</p>
     </div>
 
     <div class="line"></div>
 
+    <!-- Footer Section -->
     <div class="footer-section">
         <app-footer></app-footer>
     </div>

@@ -1,0 +1,15 @@
+.sidenav {
+    height: 100vh; /* Full-height: remove this if you want "auto" height */
+    background-color: #f8f9fa; /* Sidebar background color */
+    padding: 20px; /* Some padding inside the sidenav */
+}
+
+.sidenav .nav-link {
+    margin: 10px 0;
+    color: #007bff; /* Bootstrap primary color */
+}
+
+.sidenav .nav-link:hover {
+    color: #0056b3; /* Darken the color slightly on hover */
+    text-decoration: none; /* Prevents underlining the links */
+}

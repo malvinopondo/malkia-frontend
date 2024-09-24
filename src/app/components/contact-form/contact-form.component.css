@@ -1,0 +1,25 @@
+/* Ensure that the form background is dark */
+.card {
+    border-radius: 0.5rem;
+  }
+  
+  .form-control {
+    background-color: #343a40; /* Dark gray background */
+    color: #ffffff; /* White text */
+  }
+  
+  .form-control:focus {
+    border-color: #495057; /* Darker border color on focus */
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25); /* Subtle white shadow on focus */
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border-color: #007bff; /* Primary button border color */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+    border-color: #004085; /* Darker button border color on hover */
+  }
+  

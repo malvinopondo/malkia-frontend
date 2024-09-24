@@ -1,0 +1,11 @@
+.container {
+    .row {
+        width: 100%;
+        justify-content: center; // Ensure this is set if you want horizontal centering
+
+        .col-md-6 {
+            display: flex; // Flex display to apply justify-content
+            justify-content: center; // Horizontally center content within the column
+        }
+    }
+}

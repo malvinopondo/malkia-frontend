@@ -1,0 +1,172 @@
+.music-card {
+    background-color: #1f1f1f; /* Dark card background */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.music-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.card-img-top {
+    height: 12rem;
+    object-fit: cover; /* Ensures the image maintains aspect ratio and fits the card */
+    border-bottom: 2px solid #333; /* A subtle border below the image */
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+audio {
+    width: 100%; /* Make the audio player take full width */
+    margin-top: 1rem;
+}
+
+.btn-outline-light {
+    color: #fff;
+    border-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+
+.video-card {
+    background-color: #1f1f1f; /* Dark card background */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.card-body {
+    padding: 0; /* Remove padding to fit video properly */
+}
+
+.card-title {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem; /* Space between title and video */
+}
+
+.video-wrapper {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    margin-bottom: 1rem; /* Space between video and button */
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-outline-light {
+    color: #fff;
+    border-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Dark theme styling for the events page */
+.container {
+    background-color: #121212; /* Dark background for the entire page */
+  }
+  
+  h2 {
+    color: #ffffff; /* White text color for the header */
+  }
+  
+  .card {
+    border: none; /* Remove border for a cleaner look */
+  }
+  
+  .card-img-top {
+    max-height: 200px; /* Set a max height for the poster image */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+  }
+  
+  .card-body {
+    background-color: #1e1e1e; /* Slightly lighter dark background for card body */
+    border-radius: 0.5rem; /* Rounded corners for the card */
+  }
+  
+  .card-title {
+    font-size: 1.25rem; /* Adjust font size for the title */
+  }
+  
+  .card-subtitle {
+    font-size: 1rem; /* Adjust font size for the subtitle */
+  }
+  
+  .card-text {
+    font-size: 0.9rem; /* Adjust font size for the description */
+  }
+  
+  .shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for better visual separation */
+  }
+  
+  /* Horizontal scrolling container */
+  .event-scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .row.flex-nowrap {
+    display: flex;
+  }
+  
+  .btn-light {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  .btn-light:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .bi-chevron-left, .bi-chevron-right {
+    font-size: 1.5rem;
+  }
+
+  .custom-dialog-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  /* Responsive adjustments */
+@media (max-width: 767px) {
+    .music-card {
+        margin-bottom: 2rem;
+    }
+    .video-card {
+        margin-bottom: 2rem;
+    }
+}

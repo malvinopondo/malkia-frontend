@@ -1,0 +1,66 @@
+<div class="container">
+    <p>Logout</p>
+    <div class="row">
+        <!-- Music Section -->
+        <div class="row">
+            <h2>Music</h2>
+            <p (click)="openUploadDialog()">Upload</p>
+            <div class="col-md-4 col-sm-12 mb-4" *ngFor="let track of music">
+            <div class="card music-card border-0 shadow-lg text-center">
+                <img class="card-img-top" [src]="track.cover" alt="Track Image">
+                <div class="card-body">
+                <h5 class="card-title text-light">{{ track.title }}</h5>
+                <audio controls>
+                    <source [src]="track.url" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <a [href]="track.downloadUrl" download class="btn btn-outline-light mt-2">Download</a>
+                </div>
+            </div>
+            </div>
+        </div>
+  
+    <!-- Video Section -->
+    <div class="row">
+        <h2>Videos</h2>
+        <p (click)="openUploadDialog()">Upload</p>
+        <div class="col-md-4 col-sm-12 mb-4" *ngFor="let video of videos">
+        <div class="card video-card border-0 shadow-lg text-center">
+            <div class="card-body">
+            <h5 class="card-title text-light">{{ video.title }}</h5>
+            <div class="video-wrapper">
+                <iframe [src]="video.iframeSrc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <a [href]="video.watchUrl" target="_blank" class="btn btn-outline-light mt-2">Watch on YouTube</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+
+        <!-- Events Section -->
+        <div class="col-12 mb-4">
+            <h2 class="text-light">Events</h2>
+            <p (click)="openUploadDialog()">Upload</p>
+            <div class="row">
+                <!-- Event cards will go here -->
+                <div class="event-scroll-container">
+                    <div class="row flex-nowrap">
+                      <div class="col-md-4 mb-4" *ngFor="let event of events">
+                        <div class="card bg-dark text-white shadow">
+                          <img [src]="event.poster" class="card-img-top" alt="Event Poster">
+                          <div class="card-body">
+                            <h5 class="card-title">{{ event.date | date:'fullDate' }}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">{{ event.location }}</h6>
+                            <p class="card-text">{{ event.description }}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+            </div>
+        </div>
+    </div>
+</div>

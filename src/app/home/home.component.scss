@@ -1,44 +1,61 @@
 .container-fluid {
-    background-color: black;
+    background-color: #121212; /* Dark background for the entire page */
+    color: #e0e0e0; /* Light text color for readability */
 
     .main-section {
         height: 50rem;
         width: 100%;
-        position: relative; /* Ensure relative positioning for child elements */
-        .navbar{
-            z-index: 2;
+        position: relative;
+        overflow: hidden; /* Hide overflow to ensure image stays within bounds */
+
+        .navbar {
+            z-index: 3;
         }
 
         .image {
-            position: absolute; /* Position absolutely within .main-section */
-            top: 50%; /* Center vertically */
-            left: 50%; /* Center horizontally */
-            transform: translate(-50%, -50%); /* Adjust to exact center */
-            z-index: 1; /* Ensure it’s above other content */
-            width: 100%; /* Full width of the container */
-            height: 100%; /* Full height of the container */
-            display: flex; /* Use flexbox for centering the image */
-            justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             img {
-                max-width: 100%; /* Responsive width */
-                max-height: 100%; /* Responsive height */
-                object-fit: cover; /* Cover the container while preserving aspect ratio */
+                width: 120%; /* Ensure image covers the container */
+                height: auto;
+                object-fit: cover;
+                filter: brightness(50%); /* Darken the image slightly */
             }
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay to improve text readability */
+            z-index: 2;
         }
     }
 
     .music-section, .video-section {
+        padding: 4rem 0;
+        text-align: center;
+
         .sub-header {
-            color: white;
-            text-align: center;
+            color: #ffffff;
             font-weight: bold;
             font-size: 3rem;
+            margin-bottom: 2rem;
         }
-        .view-more{
-            color: white;
-            text-align: center;
+
+        .view-more {
+            color: #ffffff;
             font-weight: normal;
             font-size: 1.6rem;
             text-decoration: underline;
@@ -46,9 +63,13 @@
         }
     }
 
-    .line{
-        background-color: white;
+    .line {
+        background-color: #ffffff;
         height: 1px;
-        margin: 1rem 0;
+        margin: 2rem 0; /* Adjust margin for better spacing */
+    }
+
+    .footer-section {
+        padding: 2rem 0; /* Add padding for spacing around the footer */
     }
 }

@@ -1,12 +1,27 @@
 <div class="container mt-5">
-    <h2 class="text-center mb-4">Upcoming DJ Events</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4" *ngFor="let event of events">
-        <div class="card shadow">
-          <div class="card-body">
-            <h5 class="card-title">{{ event.date | date:'fullDate' }}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">{{ event.location }}</h6>
-            <p class="card-text">{{ event.description }}</p>
+    <h2 class="text-center mb-4 text-white">Upcoming DJ Events</h2>
+  
+    <!-- Navigation buttons -->
+    <div class="d-flex justify-content-between mb-4">
+      <button class="btn btn-light" (click)="scrollLeft()">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+      <button class="btn btn-light" (click)="scrollRight()">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  
+    <!-- Horizontal scrolling container -->
+    <div class="event-scroll-container">
+      <div class="row flex-nowrap">
+        <div class="col-md-4 mb-4" *ngFor="let event of events">
+          <div class="card bg-dark text-white shadow">
+            <img [src]="event.poster" class="card-img-top" alt="Event Poster">
+            <div class="card-body">
+              <h5 class="card-title">{{ event.date | date:'fullDate' }}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">{{ event.location }}</h6>
+              <p class="card-text">{{ event.description }}</p>
+            </div>
           </div>
         </div>
       </div>
