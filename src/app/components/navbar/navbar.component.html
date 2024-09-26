@@ -1,7 +1,9 @@
-<ul>
-    <li (click)="navigateHome()">Home</li>
-    <li (click)="navigateToMusic()">Music</li>
-    <li (click)="navigateToVideo()">Videos</li>
-    <li (click)="navigateToEvents()">Events</li>
+<div class="navbar">
+  <div class="navbar-toggle" (click)="toggleNavbar()">☰</div>
+  <ul [ngClass]="{'active': isNavbarOpen}">
+      <li (click)="navigateHome()">Home</li>
+      <li (click)="navigateToMusic()">Music</li>
+      <li (click)="navigateToVideo()">Videos</li>
+      <li (click)="navigateToEvents()">Events</li>
   </ul>
-  
+</div>

@@ -1,10 +1,11 @@
 <div class="container">
-    <p>Logout</p>
+    <p (click)="logoutUser()">Logout</p>
+    <p (click)="openUploadDialog()">Upload</p>
     <div class="row">
         <!-- Music Section -->
         <div class="row">
             <h2>Music</h2>
-            <p (click)="openUploadDialog()">Upload</p>
+            
             <div class="col-md-4 col-sm-12 mb-4" *ngFor="let track of music">
             <div class="card music-card border-0 shadow-lg text-center">
                 <img class="card-img-top" [src]="track.cover" alt="Track Image">
@@ -23,7 +24,7 @@
     <!-- Video Section -->
     <div class="row">
         <h2>Videos</h2>
-        <p (click)="openUploadDialog()">Upload</p>
+       
         <div class="col-md-4 col-sm-12 mb-4" *ngFor="let video of videos">
         <div class="card video-card border-0 shadow-lg text-center">
             <div class="card-body">
@@ -41,7 +42,7 @@
         <!-- Events Section -->
         <div class="col-12 mb-4">
             <h2 class="text-light">Events</h2>
-            <p (click)="openUploadDialog()">Upload</p>
+        
             <div class="row">
                 <!-- Event cards will go here -->
                 <div class="event-scroll-container">

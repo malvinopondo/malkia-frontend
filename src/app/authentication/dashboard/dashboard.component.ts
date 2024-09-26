@@ -3,6 +3,7 @@ import { SidenavComponent } from "../sidenav/sidenav.component";
 import { CommonModule } from '@angular/common';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { UploadComponent } from '../upload/upload.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -14,7 +15,7 @@ import { UploadComponent } from '../upload/upload.component';
 export class DashboardComponent {
   @ViewChild('scrollContainer') scrollContainer!: ElementRef;
 
-  constructor(private dialog: MatDialog) {}
+  constructor(private dialog: MatDialog, private router:Router) {}
 
   events = [
     { 
@@ -93,6 +94,11 @@ export class DashboardComponent {
       console.log('The dialog was closed');
       // You can handle any actions after the dialog is closed
     });
+  }
+
+
+  logoutUser(){
+    this.router.navigate(['']);
   }
   
 }
